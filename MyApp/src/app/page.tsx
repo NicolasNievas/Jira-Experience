@@ -11,12 +11,7 @@ const HomePage: React.FC = () => {
             teammates and tools. <br />
           </h1>
           <div className="space-y-4"> 
-            <Link href="/usage">
-              <button className="bg-white text-blue-500 hover:text-white hover:bg-blue-700 font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300">
-                How to use
-              </button>
-            </Link>
-            <Link href="/page/table">
+            <Link href="/table">
               <button className="bg-white text-blue-500 hover:text-white hover:bg-blue-700 font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300">
               Go to Work
               </button>
