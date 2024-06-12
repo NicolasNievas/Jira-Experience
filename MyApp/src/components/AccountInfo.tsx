@@ -1,6 +1,7 @@
 import { User } from "firebase/auth";
 import Image from "next/image";
-
+import GoogleImage from "./GoogleImage";
+import GithubImage from "./GitHubImage";
 
 interface IAccountInfoProps {
   user: User;
@@ -28,7 +29,15 @@ const AccountInfo = ({ user }: IAccountInfoProps) => {
         <p className="font-semibold">Signed in as {user?.displayName || "User"}</p>
         <p>{user?.email}</p>
       </div>
-
+      {user?.photoURL && (
+        <div>
+          {user?.providerData[0]?.providerId === 'google.com' ? (
+            <GoogleImage width={30} height={30} />
+          ) : (
+            <GithubImage width={30} height={30} />
+          )}
+        </div>
+      )}
     </div>
   );
 }
