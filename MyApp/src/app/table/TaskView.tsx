@@ -23,7 +23,7 @@ const BoardView: React.FC<BoardViewProps> = ({ tableId }) => {
 
   return (
     <div>
-      <h1 className="text-3xl font-bold text-center">Tasks for Table</h1>
+      <h1 className="text-3xl font-bold text-center text-white">Tasks for Table</h1>
       <DragDropContext onDragEnd={onDragEnd}>
         <div className="flex flex-wrap justify-center gap-6 p-6">
           {['todo', 'inProgress', 'done'].map((status) => (
