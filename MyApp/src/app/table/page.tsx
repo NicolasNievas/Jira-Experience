@@ -33,7 +33,7 @@ const TablesView: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-blue-500 to-purple-600 p-6">
+    <div className="min-h-screen bg-gradient-to-b from-black to-gray-800 p-6">
       <header className="mb-8">
         <h1 className="text-4xl font-bold text-center text-white mb-4">Your Tables</h1>
         <p className="text-center text-white">Manage your projects efficiently.</p>
